@@ -1,0 +1,15 @@
+<form>
+    <h1>Admin Login</h1>
+    <div class="input">
+        <label>Username</label>
+        <input type="text" name="user" [(ngModel)] = "user">
+    </div>
+    <div class="input">
+        <label>Password</label>
+        <input type="text" name="password" [(ngModel)] = "password">
+    </div>
+    <div class="input">
+        <input type="submit" value ="login" (click)="LoginUser()">
+    </div>
+</form>
+<router-outlet></router-outlet>
